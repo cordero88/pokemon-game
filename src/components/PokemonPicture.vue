@@ -8,8 +8,8 @@
 
             showPokemon:{
                type: Boolean,
-               require: true,
-               default: false
+               required: true,
+               default: false,
             }
         },
         computed:{
@@ -29,14 +29,14 @@
        :src="imgSrc" 
        class="hidden-pokemon"
        alt="pokemon"
-        />
+        >
   
       <img
       v-if="showPokemon"
-      src="imgSrc" 
+      :src="imgSrc" 
       class="fade-in"
       alt="pokemon"
-      />
+      >
     </div>
 
 </template>
